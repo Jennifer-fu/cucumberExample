@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 
   Before do
     @browser = Selenium::WebDriver.for :firefox
-    #@browser.timeouts.implicit_wait = 3 #3 seconds
+    @browser.manage.timeouts.implicit_wait = 3 #3 seconds
   end
 
 
